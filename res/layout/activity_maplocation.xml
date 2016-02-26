@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:background="@color/lightcoral" android:id="@+id/relativeLayout1">
+
+        <ImageView
+            android:id="@+id/map_topbar"
+            android:layout_width="@dimen/actionbar_dimen"
+            android:layout_height="@dimen/actionbar_dimen"
+            android:background="@drawable/drawer_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/arroww" />
+
+        <TextView
+            android:id="@+id/route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/map_topbar"
+            android:text="@string/title_route"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/distanceView" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/route"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/btnStartRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/start" />
+    <ImageView
+        android:id="@+id/btnStopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/pause" />
+    <ImageView
+        android:id="@+id/btnScreenShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnStartRecord"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/btnStartRecord"
+        android:src="@drawable/cut" />
+    <ImageView
+        android:id="@+id/btnScreenShotShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnStartRecord"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/btnStartRecord"
+        android:src="@drawable/share" />
+
+    <ImageView
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnStartRecord"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/btnStartRecord"
+        android:src="@drawable/clear" />
+
+</RelativeLayout>

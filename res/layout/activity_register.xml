@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/atq" />
+
+    <EditText
+        android:id="@+id/regi_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regi_userName"
+        android:layout_alignBottom="@+id/regi_userName"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/regi_userName"
+        android:text="@string/userName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regi_password"
+        android:layout_alignBottom="@+id/regi_password"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/regi_password"
+        android:text="@string/password" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regi_repassword"
+        android:layout_alignBottom="@+id/regi_repassword"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/regi_repassword"
+        android:text="@string/repassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/regi_sex"
+        android:layout_marginTop="14dp"
+        android:text="@string/sex" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/age"
+        android:layout_alignBottom="@+id/age"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/age"
+        android:text="@string/age" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/regi_repassword"
+        android:layout_below="@+id/regi_sex"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/regi_repassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regi_password"
+        android:layout_alignRight="@+id/regi_password"
+        android:layout_below="@+id/regi_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/regi_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regi_repassword"
+        android:layout_below="@+id/regi_repassword"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/regi_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/regi_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/regi_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regi_userName"
+        android:layout_alignRight="@+id/regi_userName"
+        android:layout_below="@+id/regi_userName"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/communication_way_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/communication_content"
+        android:layout_alignBottom="@+id/communication_content"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/communication_content"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/communication_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/age"
+        android:layout_alignRight="@+id/age"
+        android:layout_below="@+id/age"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/regi_goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regi_register"
+        android:layout_alignBottom="@+id/regi_register"
+        android:layout_alignRight="@+id/communication_content"
+        android:layout_toRightOf="@+id/regi_sex"
+        android:background="@color/button_color1"
+        android:text="@string/goback" />
+
+    <Button
+        android:id="@+id/regi_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/regi_sex"
+        android:layout_below="@+id/communication_content"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/communication_way_choice"
+        android:background="@color/button_color"
+        android:text="@string/register" />
+
+</RelativeLayout>

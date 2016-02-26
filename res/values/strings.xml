@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="app_name">MyaApp</string>
+  <string name="content_hint">Content</string>
+  <string name="drawer_hint">Drawer</string>
+  <string name="title_data">我的数据</string>
+  <string name="title_route">我的轨迹</string>
+  <string name="title_line">折线图形</string>
+  <string name="title_rate">心率监测</string>
+  <string name="title_bar">条形图形</string>
+  <string name="out">退出</string>
+  <string name="squared">See Squared</string>  
+  <string name="default_text">00</string>
+    <string name="discription">请将食指覆盖住手机摄像头</string>
+    <string name="touch">点击屏幕开始</string>
+    
+    <string name="loginname">登录名</string>
+    <string name="pwd">密码</string>
+    <string name="button1">登陆</string>
+    <string name="button2">退出</string>
+    <string name="button3">注册</string>
+    <string name="register_title">欢迎注册</string>
+    <string name="userName">用户名</string>
+    <string name="password">密码</string>
+    <string name="repassword">重复密码</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="email">邮箱</string>
+    <string name="register">注册</string>
+    <string name="goback">返回</string>
+    <string name="title_activity_register">Register</string>
+    <string name="age">年龄</string>
+    
+    <string name="watch_chart">查看历史记录</string>
+    
+    <string name="loading">上传数据中</string>
+    <string name="pleasewait">请稍等...</string>
+    <string name="cantbenull1">用户名不能为空！</string>
+    <string name="cantbenull2">密码不能为空！</string>
+    <string name="result1">登陆返回的result1:</string>
+    <string name="result2">登陆返回的result2:</string>
+    <string name="isconnect">亲，网络连了么？</string>
+    <string name="timeout">登陆超时</string>
+    <string name="success">登录成功</string>
+</resources>

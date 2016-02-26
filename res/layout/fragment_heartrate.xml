@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.qsc.heartratefragment.HeartbeatView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:indeterminateDrawable="@drawable/heart_beat_layer_style" />
+
+        <TextView
+            android:id="@+id/heartbeatnumbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="@string/default_text"
+            android:textSize="45sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtcovercam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/txtouch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="10dip"
+        android:text="@string/watch_chart"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgHistory"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/txtHistory"
+        android:background="@drawable/a_n" />
+
+</RelativeLayout>

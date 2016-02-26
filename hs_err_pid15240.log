@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:124), pid=15240, tid=13048
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_11-b12) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.11-b03 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x008ac800):  JavaThread "Unknown thread" [_thread_in_vm, id=13048, stack(0x008c0000,0x00910000)]
+
+Stack: [0x008c0000,0x00910000],  sp=0x0090f834,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x19231b]
+V  [jvm.dll+0x18b3f6]
+V  [jvm.dll+0x3ae6a]
+V  [jvm.dll+0x3b020]
+V  [jvm.dll+0x49d23]
+V  [jvm.dll+0x9c39e]
+V  [jvm.dll+0x9c662]
+V  [jvm.dll+0x140b01]
+V  [jvm.dll+0x164898]
+V  [jvm.dll+0xd8d11]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e85]
+C  [javaw.exe+0xab91]
+C  [javaw.exe+0xac1b]
+C  [kernel32.dll+0x4ee6c]
+C  [ntdll.dll+0x63ab3]
+C  [ntdll.dll+0x63a86]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x008ac800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=13048, stack(0x008c0000,0x00910000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.059 loading class java/lang/CharSequence done
+Event: 0.059 loading class java/lang/String done
+Event: 0.059 loading class java/lang/Class
+Event: 0.060 loading class java/lang/reflect/AnnotatedElement
+Event: 0.060 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.060 loading class java/lang/reflect/GenericDeclaration
+Event: 0.060 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.060 loading class java/lang/reflect/Type
+Event: 0.060 loading class java/lang/reflect/Type done
+Event: 0.060 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x00f30000 - 0x00f60000 	C:\AndroidStudying\java\jre8\bin\javaw.exe
+0x77990000 - 0x77ad1000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76090000 - 0x76164000 	C:\Windows\system32\kernel32.dll
+0x75c40000 - 0x75c8b000 	C:\Windows\system32\KERNELBASE.dll
+0x776a0000 - 0x77741000 	C:\Windows\system32\ADVAPI32.dll
+0x76550000 - 0x765fc000 	C:\Windows\system32\msvcrt.dll
+0x77ba0000 - 0x77bb9000 	C:\Windows\SYSTEM32\sechost.dll
+0x775e0000 - 0x77682000 	C:\Windows\system32\RPCRT4.dll
+0x76290000 - 0x76359000 	C:\Windows\system32\USER32.dll
+0x76470000 - 0x764be000 	C:\Windows\system32\GDI32.dll
+0x77690000 - 0x7769a000 	C:\Windows\system32\LPK.dll
+0x75e20000 - 0x75ebd000 	C:\Windows\system32\USP10.dll
+0x74370000 - 0x7450e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x77ae0000 - 0x77b37000 	C:\Windows\system32\SHLWAPI.dll
+0x778b0000 - 0x778cf000 	C:\Windows\system32\IMM32.DLL
+0x76360000 - 0x7642c000 	C:\Windows\system32\MSCTF.dll
+0x57230000 - 0x572ef000 	C:\AndroidStudying\java\jre8\bin\msvcr100.dll
+0x59c60000 - 0x59ff7000 	C:\AndroidStudying\java\jre8\bin\client\jvm.dll
+0x72960000 - 0x72967000 	C:\Windows\system32\WSOCK32.dll
+0x76430000 - 0x76465000 	C:\Windows\system32\WS2_32.dll
+0x75ec0000 - 0x75ec6000 	C:\Windows\system32\NSI.dll
+0x708a0000 - 0x708d2000 	C:\Windows\system32\WINMM.dll
+0x77bc0000 - 0x77bc5000 	C:\Windows\system32\PSAPI.DLL
+0x633f0000 - 0x633fc000 	C:\AndroidStudying\java\jre8\bin\verify.dll
+0x5aca0000 - 0x5acc1000 	C:\AndroidStudying\java\jre8\bin\java.dll
+0x5bb20000 - 0x5bb33000 	C:\AndroidStudying\java\jre8\bin\zip.dll
+0x733a0000 - 0x7348b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\AndroidStudying\android-sdk-windows\platforms\android-21\android.jar 
+java_command: com.qsc.heartratefragment.Example
+java_class_path (initial): C:\Users\Administrator\workspace\Kaisa\bin\classes;C:\Users\Administrator\workspace\Kaisa\libs\locSDK_5.0.jar;C:\Users\Administrator\workspace\Kaisa\libs\achartengine-1.1.0.jar;C:\Users\Administrator\workspace\Kaisa\libs\baidumapapi_v3_3_0.jar;C:\Users\Administrator\workspace\Kaisa\libs\android-support-v4.jar;C:\Users\Administrator\workspace\Kaisa\libs\gson-2.2.3.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\AndroidStudying\java\jdk1.8.0_11
+CLASSPATH=.;C:\AndroidStudying\java\jdk1.8.0_11\lib\dt.jar;C:\AndroidStudying\java\jdk1.8.0_11\lib\tools.jar
+PATH=C:/AndroidStudying/java/jre8/bin/client;C:/AndroidStudying/java/jre8/bin;C:/AndroidStudying/java/jre8/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\AndroidStudying\java\jdk1.8.0_11\bin;C:\AndroidStudying\java\jdk1.8.0_11\jre8\bin;D:\AndroidStudying\android-sdk-windows\platform-tools;D:\AndroidStudying\android-sdk-windows\tools;C:\Program Files\MySQL\MySQL Utilities 1.3.5\;C:\AndroidStudying\tomcat\bin;C:\AndroidStudying\tomcat\lib;C:\MATLAB\R2014a\runtime\win32;C:\MATLAB\R2014a\bin;C:\MATLAB\R2014a\polyspace\bin;C:\AndroidStudying\eclipse-jee-luna-SR1-win32\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 2072712k(101536k free), swap 5639368k(1119056k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.11-b03) for windows-x86 JRE (1.8.0_11-b12), built on Jun 16 2014 18:18:58 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Jan 06 21:30:44 2016
+elapsed time: 0 seconds
+

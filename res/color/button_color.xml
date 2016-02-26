@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true">
+        <!-- 定义当button 处于pressed 状态时的形态。-->
+        <shape>
+            <solid android:color="#9400D3" />
+            <stroke android:width="2dp" 
+                    android:color="#FFFFFF" /> <!-- 边框颜色 -->
+            <corners android:radius="2dp" />   <!-- 圆角弧度 -->
+            <padding android:left="10dp"       
+                     android:top="10dp"
+                     android:bottom="10dp" 
+                     android:right="10dp"/>    <!-- 文字与边框距离 -->
+        </shape>
+    </item>
+    <item android:state_focused="false">
+        <!-- 定义当button获得 focus时的形态 -->
+        <shape>
+            <solid android:color="#BA55D3"/>
+            
+            <corners android:radius="1dp" />   
+            <padding android:left="10dp" 
+                     android:top="10dp"
+                     android:bottom="10dp" 
+                     android:right="10dp"/>
+        </shape>
+    </item>
+</selector>

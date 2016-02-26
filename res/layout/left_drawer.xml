@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical" 
+        android:background="#ffffe0">
+		<ImageView
+            android:layout_width="240dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+		<RelativeLayout
+		    android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:background="@color/lay_background">
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/aqj" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/one"
+                android:text="@string/title_data"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lay_background" >
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/a_8" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/two"
+                android:text="@string/title_route"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lay_background" >
+
+            <ImageView
+                android:id="@+id/three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/a3h" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/three"
+                android:text="@string/title_line"
+                android:textSize="18sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/lay4"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:background="@color/lay_background" >
+
+	            <ImageView
+	                android:id="@+id/four"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:layout_marginTop="20dp"
+	                android:src="@drawable/a_m" />
+	
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:layout_toRightOf="@id/four"
+	                android:text="@string/title_rate"
+	                android:textSize="18sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+                android:id="@+id/lay5"
+	            android:layout_width="match_parent"
+	            android:layout_height="40dp"
+	            android:background="@color/lay_background" >
+
+	            <ImageView
+	                android:id="@+id/five"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:layout_marginTop="20dp"
+	                android:src="@drawable/a_n" />
+	
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="20dp"
+	                android:layout_toRightOf="@id/five"
+	                android:text="@string/title_bar"
+	                android:textSize="18sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" 
+            android:background="#ffffe0"/>
+        <!-- 分隔线 -->
+        <View
+        	android:layout_width="match_parent"
+        	android:layout_height="1px"
+        	android:background="#c0c0c0" />
+        
+
+        <TextView
+            android:id="@+id/tvout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lay_background"
+            android:gravity="center"
+            android:text="@string/out"/>
+            
+
+        
+
+    </LinearLayout>

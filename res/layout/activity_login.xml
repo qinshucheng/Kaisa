@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/atq" />
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edittext2"
+        android:layout_alignRight="@+id/edittext2"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="username" >
+        
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@color/button_color"
+        android:text="登陆" />
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:text="没有账户？去注册" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_toRightOf="@+id/button1"
+        android:text="退出" />
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/edittext1"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" >
+
+    </EditText>
+
+</RelativeLayout>

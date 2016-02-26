@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <!-- Action-bar looking view -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/actionbar_dimen"
+      android:background="@color/lightcoral"
+      >
+	<!-- 绘制变换箭头 -->
+    <ImageView
+        android:id="@+id/drawer_indicator"
+        android:layout_width="@dimen/actionbar_dimen"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:scaleType="centerInside"
+        android:background="@drawable/drawer_selector"
+        android:layout_gravity="start"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_dimen"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:text="@string/title_rate"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+  </LinearLayout>
+
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      >
+	<!-- Content -->
+    <FrameLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+    </FrameLayout>
+    
+	<!-- drawer -->
+    <include layout="@layout/left_drawer"/>
+
+  </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
